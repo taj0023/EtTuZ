@@ -11,7 +11,7 @@ import subprocess
 try:
 	thenga = sys.argv[1]
 	if thenga == '-h':
-		print("Usage: python3 zipcrack.py")
+		print("Usage: python3 ettuz.py")
 		exit()
 except ValueError:
 	pass
