@@ -29,7 +29,6 @@ ___
 ```bash
 git clone https://github.com/taj0023/EtTuZ.git
 cd EtTuZ
-pip3 install -r requirements.txt
 python3 ettuz.py 
 ```
 
