@@ -19,10 +19,11 @@ ___
     * No Autotab completion. (For now.)
     * The name is hard to write.(no problem if ur using zsh)
 
-
-
 ___
-Usage:
+### Screenshots
+![tool_screenshots](https://imgur.com/y34uOa6)
+___
+### Usage:
 ```bash
 git clone https://github.com/taj0023/EtTuZ.git
 cd EtTuZ
