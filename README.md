@@ -21,7 +21,9 @@ ___
 
 ___
 ### Screenshots
-![tool_screenshots](https://imgur.com/y34uOa6)
+
+![Imgur](https://i.imgur.com/5yrPgBr.png)
+![Imgur](https://i.imgur.com/mcp1bGs.png)
 ___
 ### Usage:
 ```bash
