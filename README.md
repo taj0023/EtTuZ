@@ -5,7 +5,7 @@
 
 ### Description:-
 #### A simple Python ZIP-file cracker. 
-#### The first tool in EtTu series.(Pretty sure you know how the name came :trollface: )
+#### The first tool in EtTu series.(Pretty sure you know how the name came :angel: )
 
 
 
