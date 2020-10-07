@@ -29,10 +29,10 @@ with open(passlist,'rb') as passfile:
 		password = password.strip()
 
 		try:
-			with zipfile.ZipFile(actualzip,'r') as my_zip:
-				my_zip.extractall('extracted',pwd=password)
+			with zipfile.ZipFile(actualzip) as my_zip:
+				my_zip.extractall('extracted',pwd=password.decode('utf-8'))
 				print("\033[1;32m-----------------------------------------------")
-				print("       Password Found: --> " + password.decode('utf-8'))
+				print("       Password Found: --> " + password)
 				print("-----------------------------------------------")
 				break
 		except:
