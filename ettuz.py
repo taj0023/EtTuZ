@@ -21,7 +21,7 @@ with open(passlist,'r') as passfile:
 			with zipfile.ZipFile(actualzip) as my_zip:
 				my_zip.extractall('extracted',pwd=bytes(password.encode('utf-8').strip()))
 				print("\033[1;32m-----------------------------------------------")
-				print("       Password Found: --> " + password, end = '')
+				print("       Password Found: --> " + password)
 				print("-----------------------------------------------")
 				break
 		except:

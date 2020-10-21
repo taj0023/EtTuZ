@@ -16,20 +16,18 @@ ___
     * Simple to use.
     * Simple to pronounce. (pronounced as 'a to z')
 * Cons:
-    * No Autotab completion. (For now.)
     * The name is hard to write.(no problem if ur using zsh)
 
 ___
 ### Screenshots
 
-![Imgur](https://i.imgur.com/5yrPgBr.png)
-![Imgur](https://i.imgur.com/mcp1bGs.png)
+![Imgur](https://i.imgur.com/jlWAwox.png)
 ___
 ### Usage:
 ```zsh
 git clone https://github.com/taj0023/EtTuZ.git
 cd EtTuZ
 pip3 install -r requirements.txt
-python3 ettuz.py 
+python3 ettuz.py <file> <wordlist>
 ```
 
