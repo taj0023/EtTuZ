@@ -5,42 +5,27 @@ import sys
 import time
 
 
-
-try:
-	thenga = sys.argv[1]
-	if thenga == '-h':
-		print("Usage: python3 ettuz.py")
-		exit()
-except ValueError:
-	pass
-except IndexError:
-	pass
+if len(sys.argv) == 1 or '-h' in sys.argv:
+	print("Usage: python3 ettuz.py <file> <wordlist>")
+	sys.exit()
 
 
-actualzip = input("\033[93mEnter Name(or path) of zipfile to crack: ")
-passlist =  input("\033[93mEnter Name(or path) of dictionary file : ")
+actualzip = sys.argv[1]
+passlist =  sys.argv[2]
 
-numofwords = len(list(open(passlist, "rb")))
-count = 0
 
-with open(passlist,'rb') as passfile:
+with open(passlist,'r') as passfile:
 	words = passfile.readlines()
 	for password in words:
-		password = password.strip()
-
 		try:
 			with zipfile.ZipFile(actualzip) as my_zip:
-				my_zip.extractall('extracted',pwd=password.decode('utf-8'))
+				my_zip.extractall('extracted',pwd=bytes(password.encode('utf-8').strip()))
 				print("\033[1;32m-----------------------------------------------")
-				print("       Password Found: --> " + password)
+				print("       Password Found: --> " + password, end = '')
 				print("-----------------------------------------------")
 				break
 		except:
-			print('\033[1;31m[{}/{}]  trying: '.format(count, numofwords) + str(password.decode('utf-8')))
-			count += 1
+			print('\033[1;31mtrying: ' + password, end = '')
 			time.sleep(0.0001)
-
-
-
 
 			
